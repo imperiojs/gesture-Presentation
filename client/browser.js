@@ -147,8 +147,8 @@ function handleTap(event) {
     currentEvent.innerHTML = '';    
   }, 250);
 
-  imperio.accelerationListener(measureAccelAndRemoveGestures); 
 }
+imperio.accelerationListener(measureAccelAndRemoveGestures); 
 
 imperio.tapListener(handleTap);
 
@@ -159,7 +159,7 @@ const gesture = document.getElementById('gesture-container');
 
 function measureAccelAndRemoveGestures(event) {
   if (accelTimes > 0) return;
-  if (event.x > 25 || event.y > 25) {
+  if (event.x > 20 || event.y > 20) {
     const offPage = 2000;
     const timing = '3';
     swipeExample.style.transition = `transform ${timing}s`;

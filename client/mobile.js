@@ -8,16 +8,16 @@ imperio.emitRoomSetup();
 
 imperio.gesture('swipe', swipeDiv);
 
-imperio.gesture('pinch', pinchDiv);
-
 imperio.gesture('pan', panDiv);
+
+imperio.gesture('pinch', pinchDiv);
 
 imperio.gesture('rotate', rotateDiv);
 
-imperio.gesture('press', panDiv);
-imperio.gesture('pressUp', panDiv);
+// imperio.gesture('press', panDiv);
+// imperio.gesture('pressUp', panDiv);
 
 imperio.gesture('tap', tapDiv);
 
 imperio.emitAcceleration.gravity();
-imperio.emitGyroscope();
+imperio.emitGyroscope.start();

@@ -64,6 +64,38 @@
   transition:height 0.25s, width 0.25s;
 }
 
+#sensor-container {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:200px;
+  width:100%;
+}
+
+.sensor {
+  display:inline-block;
+  height:150px;
+  width:150px;
+  border: 1px black solid;
+  border-radius:15px;
+}
+
+#accel-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("class="sensor"");
+}
+
+#gyro-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("https://d3nevzfk7ii3be.cloudfront.net/igi/nmNv4u3uHqZ5VNIR.large");  
+}
+
+#geo-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/tap.svg");  
+  transition:height 0.25s, width 0.25s;
+}
+
 /*mobile div for gestures*/
 #swipe-box {
   color:yellow;
@@ -93,7 +125,7 @@
   color:yellow;
   background-color: purple;
   width:100%;
-  height:4em;
+  height:7em;
   font-size:5em;  
 }
 
