@@ -2,6 +2,33 @@
 <!-- header and footer, if you don't need to add any new things to the head -->
 <%- include('templates/header') %>
 <div>
-  <h1>Salve, Munde!</h1>
+  <div id="control"></div>
+  <h1 id="current-event"></h1>
+  <div id="fake">
+    <div id="gesture-container">
+      <div id="swipe-example" class="gesture"></div>
+      <div id="pan-example" class="gesture"></div>
+      <div id="pinch-example" class="gesture"></div>
+      <div id="rotate-example" class="gesture"></div>
+      <div id="press-example" class="gesture"></div>
+      <div id="tap-example" class="gesture"></div>
+    </div>
+  </div>
+  <div id="sensor-container">
+    <div id="accel-example" class="sensor"></div>
+    <div id="gyro-example" class="sensor"></div>
+    <div id="geo-example" class="sensor"></div>
+  </div>
+  <div id="code-picture"></div>
+  <h3 id="code"></h3>
 </div>
-<%- include('templates/footer') %>
+</body>
+  <!--   Edit the following to lead to the appropriate Imperio client file -->
+  <!-- Note that this path's root will likely come from the path static path -->
+  <!--     you defined for the Imperio library at the top of server.js -->
+  <!-- ********************************************************************* -->
+  <!--   Chances are, you WON'T need to change anything if we continue to -->
+  <!--     build our library to the /dist directory in our library root -->
+  <script src='./dist/imperio.js'></script>
+  <script src='./browser.js'></script>  
+</html>

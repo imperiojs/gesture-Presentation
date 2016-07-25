@@ -1,1 +1,176 @@
+* {
+  font-family: "Helvetica", sans-serif;
+}
 
+#control {
+  display:block;
+  background-image:url('./Pictures/controlHeader.png');
+  height:100px;
+  background-size: contain;
+  background-repeat:no-repeat;
+}
+
+#code {
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  text-align: center;
+
+}
+
+#code-picture {
+  transition:opacity 4.5s;
+  display:block;
+  opacity:0;
+  position:relative;
+  width:1200px;
+  height:500px;
+  background-image: url("./Pictures/codes2.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-500px;
+  z-index: -1;
+}
+
+#current-event {
+  display:block;
+  height:80px;
+  font-size:80px;
+  width:100%;
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:0px;
+}
+
+#gesture-container {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:200px;
+  width:100%;
+}
+
+.gesture {
+  display:inline-block;
+  height:150px;
+  width:150px;
+  border: 1px black solid;
+  border-radius:15px;
+}
+
+#swipe-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  transition:transform 0.25s;
+  background-image: url("http://hammerjs.github.io/assets/img/swipe.svg");
+}
+
+#pinch-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/pinch.svg");
+}
+
+#pan-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/pan.svg");
+}
+
+#rotate-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/rotate.svg");
+}
+
+#press-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/press.svg");  
+}
+
+#tap-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("http://hammerjs.github.io/assets/img/tap.svg");  
+  transition:height 0.25s, width 0.25s;
+}
+
+#sensor-container {
+  margin-top:90px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:200px;
+  width:100%;
+}
+
+.sensor {
+  display:inline-block;
+  height:150px;
+  width:150px;
+  border: 1px black solid;
+  border-radius:15px;
+  background-size: contain;
+  background-repeat:no-repeat;
+  margin:0 45px;
+}
+
+#accel-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  transition: background-color 1.5s, transform 3s;
+  background-image: url("./Pictures/accelerometer.png");
+  background-position:2px 4px;    
+}
+
+#gyro-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  transition: background-color 1.5s, transform 4s;  
+  background-image: url("./Pictures/gyroscope.png");
+  background-position:2px 4px;  
+
+}
+
+#geo-example {
+  transform: translate(0px, 0px) rotate(0deg) scale(1);
+  background-image: url("./Pictures/location.png");  
+  transition:height 0.25s, width 0.25s, transform 4s;
+  background-position:13px;
+}
+
+/*mobile div for gestures*/
+#swipe-box {
+  color:yellow;
+  background-color: blue;
+  width:100%;
+  height:3em;
+  font-size:5em;
+}
+
+#rotate-box {
+  color:black;
+  background-color: red;
+  width:100%;
+  height:5em;
+  font-size:5em;  
+}
+
+#pan-box {
+  color:white;
+  background-color: black;
+  width:80%;
+  height:4em;
+  font-size:5em;  
+}
+
+#pinch-box {
+  color:yellow;
+  background-color: purple;
+  width:100%;
+  height:7em;
+  font-size:5em;  
+}
+
+#tap-box {
+  color:yellow;
+  background-color: green;
+  width:50%;
+  height:4em;
+  font-size:5em;  
+}
