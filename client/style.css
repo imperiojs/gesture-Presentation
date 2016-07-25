@@ -2,8 +2,16 @@
   font-family: "Helvetica", sans-serif;
 }
 
+#control {
+  display:block;
+  background-image:url('./Pictures/controlHeader.png');
+  height:100px;
+  background-size: contain;
+  background-repeat:no-repeat;
+}
+
 #code {
-  margin:0 0;
+  margin:250px 0;
 }
 
 #current-event {
@@ -12,7 +20,7 @@
   font-size:80px;
   width:100%;
   text-align:center;
-  margin-top:175px;
+  margin-top:130px;
   margin-bottom:0px;
 }
 
