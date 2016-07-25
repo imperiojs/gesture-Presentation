@@ -11,7 +11,10 @@
 }
 
 #code {
-  margin:250px 0;
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  text-align: center;
 }
 
 #current-event {
@@ -20,7 +23,7 @@
   font-size:80px;
   width:100%;
   text-align:center;
-  margin-top:130px;
+  margin-top:30px;
   margin-bottom:0px;
 }
 
@@ -73,8 +76,9 @@
 }
 
 #sensor-container {
+  margin-top:90px;
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items:center;
   height:200px;
   width:100%;
@@ -86,22 +90,31 @@
   width:150px;
   border: 1px black solid;
   border-radius:15px;
+  background-size: contain;
+  background-repeat:no-repeat;
+  margin:0 45px;
 }
 
 #accel-example {
   transform: translate(0px, 0px) rotate(0deg) scale(1);
-  background-image: url("class="sensor"");
+  transition: background-color 1.5s, transform 4s;
+  background-image: url("./Pictures/accelerometer.png");
+  background-position:2px 4px;    
 }
 
 #gyro-example {
   transform: translate(0px, 0px) rotate(0deg) scale(1);
-  background-image: url("https://d3nevzfk7ii3be.cloudfront.net/igi/nmNv4u3uHqZ5VNIR.large");  
+  transition: background-color 1.5s, transform 4s;  
+  background-image: url("./Pictures/gyroscope.png");
+  background-position:2px 4px;  
+
 }
 
 #geo-example {
   transform: translate(0px, 0px) rotate(0deg) scale(1);
-  background-image: url("http://hammerjs.github.io/assets/img/tap.svg");  
-  transition:height 0.25s, width 0.25s;
+  background-image: url("./Pictures/location.png");  
+  transition:height 0.25s, width 0.25s, transform 4s;
+  background-position:13px;
 }
 
 /*mobile div for gestures*/
