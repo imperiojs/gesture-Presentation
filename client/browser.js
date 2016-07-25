@@ -17,6 +17,7 @@ const gyroExample = document.getElementById('gyro-example');
 const geoExample = document.getElementById('geo-example');
 const sensorContainer = document.getElementById('sensor-container');
 const cubeContainer = document.getElementById('cube-container');
+const codePicture = document.getElementById('code-picture');
 const mainColor = 'white';
 const activeColor = '#FD9239';
 swipeExample.style.backgroundColor = mainColor;
@@ -254,10 +255,13 @@ function measureAccelAndRemoveGestures(event) {
       pinchExample.style.transform = `translate(-1600px, 0px)`;
       pressExample.style.transform = `translate(-1600px, 0px)`;
       tapExample.style.transform = `translate(-1600px, 0px)`;
-      accelExample.style.transform = `translate(-1600px, 0px)`;
       gyroExample.style.transform = `translate(-1600px, 0px)`;
       geoExample.style.transform = `translate(-1600px, 0px)`;
       
+      accelExample.style.transform = `translate(295px, -235px)`;
+      accelExample.style.backgroundColor = activeColor;
+      codePicture.style.display = 'block';      
+      codePicture.style.opacity = '1';      
     }
   }
 }
@@ -267,7 +271,6 @@ function nextAccelEvent() {
 }
 
 function startRotation () {
-  sensorContainer.style.margin = 
   accelExample.style.backgroundColor = mainColor;
   gyroExample.style.backgroundColor = activeColor;
   swipeExample.style.border = `3px solid #FD9239`;
