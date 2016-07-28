@@ -5,7 +5,7 @@
 #control {
   display:block;
   background-image:url('./Pictures/header.png');
-  height:100px;
+  height:150px;
   background-size: contain;
   background-repeat:no-repeat;
 }
